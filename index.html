@@ -1,65 +1,45 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-    <script src="./script.js" defer></script>
-    <title>Todo App</title>
-  </head>
-  <body>
-    <h1>Todo App</h1>
-    <div class="wrapper">
-      <form>
-        <input
-          id="todo-input"
-          type="text"
-          placeholder="write anything and hit enter to add"
-          autocomplete="off"
-        />
-        <button id="add-button">ADD</button>
-      </form>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="./style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="./script.js" defer></script>
+<title>Todo App</title>
+</head>
 
-      <ul id="todo-list">
-        <!-- <li class="todo">
-          <input type="checkbox" id="todo-1" />
+<body>
 
-          <label class="custom-checkbox" for="todo-1">
-            <span class="material-symbols-outlined"> check </span>
-          </label>
+<h1>Todo App</h1>
 
-          <label for="todo-1" class="todo-text">
-            webdev project with html,css and js
-          </label>
+<div class="wrapper">
 
-          <button class="delete-button">
-            <span class="material-symbols-outlined"> delete </span>
-          </button>
-        </li>
+<form>
+<input id="todo-input" type="text" placeholder="Write Anything and Hit Enter to Add"/>
+<button id="add-button">ADD</button>
+</form>
 
-        <li class="todo">
-          <input type="checkbox" id="todo-2" />
+<!-- FILTER -->
+<div class="filters">
+<button class="filter-btn active" data-filter="all">All</button>
+<button class="filter-btn" data-filter="completed">Completed</button>
+<button class="filter-btn" data-filter="pending">Pending</button>
+</div>
 
-          <label class="custom-checkbox" for="todo-2">
-            <span class="material-symbols-outlined"> check </span>
-          </label>
+<ul id="todo-list"></ul>
 
-          <label for="todo-2" class="todo-text">
-            webdev project with html,css and js
-          </label>
+<!-- PAGINATION -->
+<div class="pagination">
+<button id="prev-btn">Prev</button>
+<div id="page-numbers"></div>
+<button id="next-btn">Next</button>
+</div>
 
-          <button class="delete-button">
-            <span class="material-symbols-outlined"> delete </span>
-          </button>
-        </li> -->
-        hello
-      </ul>
-    </div>
-  </body>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="toast"></div>
+
+</body>
 </html>
-
-
